@@ -1,6 +1,3 @@
-# Save-the-Reef
-Open Source Coral Data Platform
-
 # 🌊 Save the Reef
 **An open-source coral data platform connecting divers, researchers, and AI.**
 
