@@ -23,36 +23,5 @@ Empower citizen scientists and researchers to collaboratively monitor coral reef
 ---
 
 ## 🧩 Architecture
- Divers / Users
-      │
-      ▼
- ┌────────────────────────────┐
- │  Frontend (React / Next.js)│
- │  • Upload reef images      │
- │  • View interactive map    │
- │  • Track reef health stats │
- └────────────┬───────────────┘
-              │ REST / WebSocket API
-              ▼
- ┌────────────────────────────┐
- │  Backend (FastAPI)         │
- │  • Handles authentication  │
- │  • Stores reef data (PostgreSQL + PostGIS) │
- │  • Integrates with AI model │
- └────────────┬───────────────┘
-              │
-              ▼
- ┌────────────────────────────┐
- │  AI Model API (YOLO11m)    │
- │  • Analyzes coral images   │
- │  • Detects bleaching & disease │
- │  • Returns annotated results │
- └────────────┬───────────────┘
-              │
-              ▼
- ┌────────────────────────────┐
- │  Cloud Storage (S3 / Spaces)│
- │  • Stores raw & processed images │
- │  • Provides public data access for researchers │
- └────────────────────────────┘
+The platform uses a modular design combining a React frontend, a FastAPI backend, and a PostgreSQL + PostGIS database. Uploaded reef images are analyzed by a YOLO11m AI model for disease detection, then stored with geolocation data in cloud storage. Results are visualized through an interactive dashboard and shared via an open API for researchers and conservation groups.
 
