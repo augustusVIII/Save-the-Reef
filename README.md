@@ -1,4 +1,4 @@
-<img width="987" height="374" alt="image" src="https://github.com/user-attachments/assets/30f00d39-a97e-44aa-8d40-bd688c9458ae" />🌊 Save the Reef
+🌊 Save the Reef
 
 An open-source platform for divers and researchers to upload, analyze, and visualize coral reef data through geotagged images and AI-powered health monitoring.
 
