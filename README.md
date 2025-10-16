@@ -40,6 +40,7 @@ The project bridges citizen science and marine research through accessible tools
 ---
 
 ## 📈 Future Roadmap
+- [x] AI model for coral species classification  
 - [ ] Global heatmap visualization  
 - [ ] Integration with more Marine NGO datasets  
 - [ ] Mobile app version for divers  
