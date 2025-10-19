@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----------------------------------------------
+   Custom Theme Styles for Save the Reef
+   ---------------------------------------------- */
+
+@layer base {
+  body {
+    @apply bg-sky-50 text-gray-800 font-sans antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-bold text-sky-700;
+  }
+
+  a {
+    @apply text-sky-600 hover:text-sky-700 transition-colors;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-sky-600 text-white px-4 py-2 rounded-xl font-medium 
+           hover:bg-sky-700 transition;
+  }
+
+  .btn-outline {
+    @apply border border-sky-600 text-sky-600 px-4 py-2 rounded-xl 
+           hover:bg-sky-50 transition;
+  }
+
+  .card {
+    @apply bg-white shadow-sm rounded-2xl p-6 border border-sky-100;
+  }
+
+  .section-title {
+    @apply text-3xl font-semibold mb-4 text-sky-700;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/40 backdrop-blur-md shadow-md rounded-2xl;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.6s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

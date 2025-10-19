@@ -1,0 +1,11 @@
+flask==3.0.0
+flask-cors==4.0.0
+requests==2.31.0
+pandas==2.2.0
+numpy==1.26.0
+tensorflow==2.16.0
+opencv-python==4.9.0
+sqlalchemy==2.0.30
+geopandas==1.0.1
+psycopg2-binary==2.9.9
+gunicorn==21.2.0
